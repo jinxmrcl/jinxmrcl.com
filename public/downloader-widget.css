@@ -1,0 +1,184 @@
+/* Modern browsers ignore allowtransparency on iframes, so any area not
+   covered by an element paints the browser's default white canvas.
+   Use a solid color matching the dashboard card background instead of
+   relying on transparency, and force every level to fill 100% width so
+   nothing is left uncovered. */
+
+* {
+  box-sizing: border-box !important;
+}
+
+html,
+body {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #0a0a0a !important;
+  color: #f5f5f5 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+    "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.widget-wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.widget-input {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 8px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+#urlForm {
+  flex: 1 1 200px !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+
+.widget-input-url {
+  width: 100% !important;
+  height: 38px !important;
+  min-width: 0 !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: #f5f5f5 !important;
+  padding: 0 12px !important;
+  font-size: 14px !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.widget-input-url::placeholder {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+.widget-input-url:focus {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.12) !important;
+}
+
+.widget-input-quality {
+  flex: 0 0 auto !important;
+  width: fit-content !important;
+  height: 38px !important;
+  margin: 0 !important;
+}
+.widget-input-quality select {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  height: 38px !important;
+  margin: 0 !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: #f5f5f5 !important;
+  padding: 0 30px 0 12px !important;
+  font-size: 13px !important;
+  line-height: 36px !important;
+  outline: none !important;
+  box-shadow: none !important;
+  cursor: pointer !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-opacity='0.5' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 8px center !important;
+  background-size: 16px !important;
+  transition: border-color 0.15s ease !important;
+}
+.widget-input-quality select:hover {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+.widget-input-quality select:focus {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.12) !important;
+}
+.widget-input-quality select option {
+  background-color: #111113 !important;
+  color: #f5f5f5 !important;
+}
+
+.widget-input-download {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  flex: 1 1 100% !important;
+  width: 100% !important;
+  height: 40px !important;
+  margin: 0 !important;
+  border-radius: 12px !important;
+  border: none !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  padding: 0 18px !important;
+  cursor: pointer !important;
+  box-shadow: none !important;
+  transition: background-color 0.15s ease !important;
+}
+.widget-input-download:hover {
+  background-color: rgba(255, 255, 255, 0.88) !important;
+}
+.widget-input-download .quality {
+  opacity: 0.6 !important;
+  margin-left: 4px !important;
+  font-size: 12px !important;
+  color: inherit !important;
+}
+
+.widget-card {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  background-color: rgba(255, 255, 255, 0.02) !important;
+  overflow: hidden !important;
+}
+.widget-card:has(> .widget-card-list:empty) {
+  display: none !important;
+  border: none !important;
+}
+
+.widget-card-list {
+  margin: 0 !important;
+  padding: 0 !important;
+  border-top: none !important;
+  list-style: none !important;
+}
+.widget-card-list li {
+  padding: 12px 16px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #f5f5f5 !important;
+  font-size: 14px !important;
+}
+.widget-card-list li:last-child {
+  border-bottom: none !important;
+}
+.widget-card-item {
+  margin: 0 !important;
+}
+.widget-card-list a {
+  color: #f5f5f5 !important;
+}
