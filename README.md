@@ -1,6 +1,6 @@
 <div align="center">
 
-# jinxmrcl
+![Ticket Tool](assets/gambling_bot_banner_1.png)
 
 **A self-hosted, Discord-native file host** — image/video/audio hosting with per-user
 profiles, custom embeds, stylish QR sharing, and a full staff/moderation dashboard.
