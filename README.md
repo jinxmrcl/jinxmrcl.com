@@ -12,7 +12,7 @@ profiles, custom embeds, stylish QR sharing, and a full staff/moderation dashboa
 ![MySQL](https://img.shields.io/badge/MySQL%20%2F%20MariaDB-8%2B-4479A1?logo=mysql&logoColor=white)
 [![GitHub stars](https://img.shields.io/github/stars/jinxmrcl/jinxmrcl.com?style=flat&color=yellow)](https://github.com/jinxmrcl/jinxmrcl.com/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/jinxmrcl/jinxmrcl.com)](https://github.com/jinxmrcl/jinxmrcl.com/issues)
-[![Lines of Code](https://tokei.rs/b1/github/jinxmrcl/jinxmrcl.com)](https://github.com/jinxmrcl/jinxmrcl.com)
+[![Lines of Code](https://img.shields.io/endpoint?url=https%3A%2F%2Fghloc.vercel.app%2Fapi%2Fjinxmrcl%2Fjinxmrcl.com%2Fbadge)](https://github.com/jinxmrcl/jinxmrcl.com)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 
 </div>
