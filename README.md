@@ -42,6 +42,10 @@ Next.js 15 (App Router) · React 19 · TypeScript · Tailwind CSS v4 · MySQL/Ma
 
 ## Getting started
 
+> New to self-hosting, or not sure how to install `ffmpeg`/MySQL? Follow
+> **[SETUP.md](SETUP.md)** for a full step-by-step walkthrough. The short
+> version is below.
+
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) 20 or newer
